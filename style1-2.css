@@ -1,0 +1,234 @@
+
+    
+
+   /*********************************** main and nav section css ********************** */
+    .content {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        top: 82px;
+        left: -18px;
+        padding: 0px 30px;
+    }
+    .content h1 {
+        font-size: 18px;
+    }
+    #main::before {
+        content: "";
+        height: 56%;
+         
+    }
+    .container { 
+        margin: auto 8px;
+    }
+    .container ul li {
+        margin: 0px 13px; 
+    } 
+     .iconContainer{
+        display: none;
+      }
+    #navbar h2 {
+        margin: 0px 16px;
+    }
+    .h-primary {
+        text-align: center;
+        font-size: 18px;
+    }
+    #main {
+        width: 100%;
+    }
+    .content p { 
+        margin: 25px 0px; 
+        font-style: 1.1rem;
+    }
+    .btn {
+        padding: 10px 10px;
+    }
+    p { 
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    
+     
+    
+    
+    /* ***************************** Story ********************** */
+    #story {
+        flex-direction: column; 
+        top: 3rem;
+    }
+
+        .storyItem {
+            display: flex;
+            height: 380px;
+            width: 100%;
+            position: relative; 
+            padding: 7px;
+            margin: 14px 0px;
+            align-items: center;
+        }
+        
+      .storyItem img {
+        margin: 20px;
+        height: 100%;
+        width: 50%;
+    }
+    .storyItem h1 {
+        font-size: 23px;
+    }
+    .storyItem p { 
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+    
+    /********************************** Sale off ******************** */
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        width: 100%;
+        position: relative;
+        top: 10rem;
+        margin: 53px 0px;
+    }
+     .item1 { 
+        width: 100%;
+        padding: 0px;
+       }
+       .item2 {
+        width: 90%;
+        height: 60%;
+        margin: auto;
+    }
+    .item3 {
+        width: 90%;
+        height: 60%;
+        margin: auto;
+    }
+    .item4 {
+        width: 90%;
+        height: 60%;
+        margin: auto;
+    }
+    .flex-items {
+        padding: 10px 10px;
+        width: 50%;
+    }
+    .item2 .imgs {
+        height: 80%;
+        width: 100%;
+    }
+    .item3 .imgs {
+        height: 80%;
+        width: 100%;
+    }
+    .item4 .imgs {
+        height: 80%;
+        width: 100%;
+    }
+        /****************************** latest product ************************ */
+        .flex-product {
+            top: 17rem;
+        }
+        .flex-product {
+            margin-top: 88px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            height: 700px;
+            position: relative;
+        }
+        .product2 {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around;
+            height: 200%;
+            width: 100%;
+            position: relative;
+            top: 6rem;
+        }
+        .product1 {
+            width: 50%;
+            height: 50%;
+            cursor: pointer;
+            margin: auto;
+        }
+        .product2-2 {
+            width: 45%;
+            height: 26%;
+        }
+        .product2-2 div {
+            display: flex;
+            flex-direction: column; 
+            margin: 61px 0px; 
+        }
+        .product2-1 {
+            width: 45%;
+            height: 26%;
+        }
+        .product2-3 {
+            width: 45%;
+            height: 26%;
+        }
+        .product2-4 {
+            width: 45%;
+            height: 26%;
+        }
+        .product2-5 {
+            width: 45%;
+            height: 26%;
+        }
+    
+    
+    
+    
+    
+    
+    /*********************************** Intro ********************************* */
+    .intro {
+        top: 344rem;
+        height: 60%;
+        text-align: center;
+    }
+    .intro-content p {
+        font-size: 1.1rem;
+        padding:25px; 
+    }
+    .intro-content p {
+        font-weight: lighter;
+        align-items: center;
+    }
+    .intro-content {
+        width: 100%;
+        padding: 5px;
+    }
+    /*********************************** Top product*************** */
+    .top-product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 262rem;
+    }
+    .head {
+        top: 253rem;
+    }
+    
+    
+    .heading h1 {
+        text-align: center;
+    }
+    .heading h1::before, .heading h1::after {
+        width: 10rem;
+    }
+    .heading p { 
+        text-align: center;
+    }
+    .top-items {
+        width: 40%;
+        height: 100%;
+        margin: 14px 0px; 
+    }

@@ -1,0 +1,202 @@
+ 
+/*********************************** main and nav section css ********************** */
+.content {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 82px;
+    left: -18px;
+    padding: 0px 10px;
+}
+.content h1 {
+    font-size: 18px;
+}
+#main::before {
+    content: "";
+    height: 56%;
+     
+}
+.container{
+    display:none;
+}
+.iconContainer{
+    display: none;
+}
+#navbar h2 {
+    margin: 0px 1px;
+}
+.h-primary {
+    text-align: center;
+    font-size: 18px;
+}
+.btn {
+    padding: 10px 10px;
+}
+p { 
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+ 
+
+
+/* ***************************** Story ********************** */
+#story {
+    flex-direction: column; 
+    top: 0rem;
+}
+.storyItem 
+{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 121spx;
+    padding: 7px;
+    margin: 14px 0px; 
+    align-items: center;
+    
+ }
+  .storyItem img {
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+}
+.storyItem h1 {
+    font-size: 23px;
+}
+.storyItem p {
+    margin: 20px 0px;
+    line-height: 20px;
+    font-size: 1rem;
+}
+
+/********************************** Sale off ******************** */
+.flex-container {
+    top: 19rem;
+    flex-direction: column;
+    width: 100%;
+}
+ .item1 { 
+    width: 100%;
+    padding: 0px;
+   }
+   .item2 {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+}
+.item3 {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+}
+.item4 {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+}
+.flex-items {
+    padding: 10px 10px;
+}
+.item2 .imgs {
+    height: 80%;
+    width: 100%;
+}
+.item3 .imgs {
+    height: 80%;
+    width: 100%;
+}
+.item4 .imgs {
+    height: 80%;
+    width: 100%;
+}
+    /****************************** latest product ************************ */
+    .flex-product {
+        top: 182rem;
+    }
+    .product2 {
+        width: 93%;
+    height: 200%;
+    }
+    .product1 {
+       display: none;
+    }
+    .product2-2 {
+        width: 100%;
+        height: 24%;
+    }
+    .product2-2 div {
+        display: flex;
+        flex-direction: column; 
+        margin: 61px 0px; 
+    }
+    .product2-1 {
+        width: 100%;
+        height: 26%;
+        margin: 13px 5px 0px 5px;
+        cursor: pointer;
+    }
+    .product2-3 {
+        width: 100%;
+        height: 26%;
+        margin: 13px 5px 0px 5px;
+        cursor: pointer;
+    }
+    .product2-4 {
+        width: 100%;
+        height: 26%;
+        margin: 13px 5px 0px 5px;
+        cursor: pointer;
+    }
+    .product2-5 {
+        width: 100%;
+        height: 26%;
+        margin: 13px 5px 0px 5px;
+        cursor: pointer;
+    }
+
+
+
+ 
+
+/*********************************** Intro ********************************* */
+.intro {
+    top: 472em;
+    height: 60%;
+    text-align: center;
+}
+.intro-content p {
+    font-size: 1rem;
+}
+.intro-content p {
+    font-weight: lighter;
+    align-items: center;
+}
+.intro-content {
+    width: 100%;
+    padding: 5px;
+}
+/*********************************** Top product*************** */
+.top-product {
+    top: 330rem;
+    flex-wrap: wrap;
+}
+.head {
+    top: 320rem;
+}
+.heading h1::before, .heading h1::after {
+    display: none;
+    content: ""; 
+}
+.heading h1 {
+    text-align: center;
+}
+.heading p { 
+    text-align: center;
+}
+.top-items {
+    width: 100%;
+    height: 100%;
+    margin: 27px; 
+}

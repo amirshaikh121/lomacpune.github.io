@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif; 
+    color: black;
+   
+}
+ 
+/* navbar link styling */
+ 
+   
+  
+.nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4d4d4d;
+    position: fixed;
+    z-index: 9999;
+}
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  .iconContainer{
+    color: white;
+}
+  @media (max-width:700px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+ 
+  
+
+/* Navbar Icons Styling */
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+    margin-top: 14px;
+}
+.iconContainer i{
+     margin: 0px 18px;
+     font-size: 20px;
+     cursor: pointer;
+}
+.iconContainer i:hover{
+    
+    font-size: 22px;
+     
+}    
+
+/* main section styling */
+
+.content{
+    width: 483px;
+    height: 400px;
+    position: relative;
+    top: 238px;
+    left: 14px;
+    margin: 0px 20px;
+}
+.content h1{
+     font-size: 36px;
+}
+.content p{
+    text-align: justify;
+    margin: 23px 0px;
+}
+.btn{
+    padding: 10px 25px;
+    margin: 20px 0px;
+}
+.btn:hover{
+    background-color: #bfd6eb;
+}
+#main::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url(img/home3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+/* Story section after main  */
+
+#story{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 351px; 
+    padding:15px;
+
+}
+.storyItem{
+    height: 500px;
+    width: 50%;
+    margin: auto 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.storyItem h1{
+    font-size: 2.5rem;
+
+}
+.storyItem p{
+    margin: 20px 0px;
+    line-height: 26px;
+    font-size: 1.1rem;
+}
+ .storyItem img {
+     margin: 20px;
+ }
+  
+  /************************************* sale off container  ********************************************/
+
+  .flex-container{
+      display: flex;
+       height: 700px;
+    width: 100%; 
+     position: relative;
+    top: 341px;
+    margin: 53px 0px;
+  }
+  .flex-items{
+      padding:0px 8px;
+  }
+  .item1{
+    height: 450px;
+    width: 40%; 
+     padding: 122px 40px;
+   }
+  
+  .item1 h1{
+    font-size: 2.5rem;
+
+  }
+  .item1 p{
+    margin: 20px 0px;
+    line-height: 26px;
+    font-size: 1.1rem;
+   }
+  .item2{
+    height: 450px;
+    width: 20%;
+     
+  }
+  .item2:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+  .item2 p{
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin: 5px;
+  }
+  .item2 .imgs {
+      height: 350px;
+       
+  }
+  .item2 .imgs img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  display: block;
+   
+  }
+  .item2 .for-price{
+      margin-top: 12px;
+  }
+  .price{
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  .price-not{
+    text-decoration: line-through;
+    font-weight: lighter;
+  }
+ 
+ .item3{
+    height: 450px;
+    width: 20%;
+    
+   } 
+   .item3:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+   .item3 p{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 5px;
+}
+   .item3 .imgs {
+    height: 350px;
+    
+}
+.item3 .imgs img{
+
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+ 
+}
+.item3 .for-price{
+    margin-top: 32px;
+}
+ .item4{
+    height: 450px;
+    width: 20%;
+     
+   }
+   .item4:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+   .item4 p{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 5px;
+}
+   .item4 .imgs {
+    height: 350px;
+    
+}
+.item4 .imgs img{
+     width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+ 
+}
+.item4 .for-price{
+    margin-top: 32px;
+}
+
+/******************************* css for Our Latest Products *********************/
+
+.flex-product{
+    margin-top: 88px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.product-item{
+    margin: 0px 10px;
+}
+  .product1{  
+    width: 40%;
+    cursor: pointer;
+}
+
+.product1 .img1{
+    height: 90%;
+    margin-top:29px;
+  }
+.product1 .img1 img{
+    width: 100%;
+    height: 94%;
+    margin: auto;
+  display: block; 
+  }
+  .img1 img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+   .product2{
+     width: 60%;    
+}
+.lite-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product2-1{
+    width: 30%;
+    height: 46%;
+    margin: 29px 5px 0px 5px;
+    cursor: pointer;
+}
+ 
+.product2-2{
+    width: 67%;
+    height: 46%;
+    margin: 29px 5px 0px 5px;
+}
+.product2-2 div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 120px 0px;
+    text-align: right;
+}
+.product2-2 div h1 {
+    font-size: 2.8rem;
+}
+.product2-2 div p{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+.product2-3{
+    width: 30%;
+    height: 50%;
+    margin: 27px 28px 0px 7px;
+    cursor: pointer;
+}
+ 
+.product2-4{
+    width: 30%;
+    height: 50%;
+    margin: 27px 30px 0px 5px;
+    cursor: pointer;
+}
+ 
+.product2-5{
+    width: 30%;
+    height: 50%;
+    margin:27px 5px 0px ;
+    cursor: pointer;
+}
+ 
+.img2{
+    height: 80%;
+}
+ .img2 img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  display: block;
+   
+  }
+  .img2 img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+  .img3{
+    height: 70%;
+}
+ .img3 img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  display: block;
+  }
+  .img3 img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+
+/* -------------------------------Introduction Section CSS------------------------------------------- */
+
+.intro{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top:216rem;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-content{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.intro-content img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    align-items: center;
+}
+.intro-content h1{
+    font-size: 3rem;
+    align-items: center;
+}
+.intro-content p{
+    font-weight: lighter;
+    align-items: center;
+}
+.intro-content p1{
+    font-weight: bold;
+    align-items: center;
+}
+
+/* ---------------------------------Top product Section Style------------------------------------------- */
+
+.top-product{
+    display: flex;
+    width: 100%;
+    height: 50%; 
+    position: absolute;
+    top: 187rem;
+}
+.head{
+    width: 100%;
+    height: 12%; 
+    position: absolute;
+    top: 179rem;
+    width: 100%;
+    display: flex;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading h1 {
+    font-size: 2.1rem;
+}
+.heading p{
+    font-weight: lighter;
+      font-size: 1.1rem;    
+}
+.heading h1::before,
+.heading h1::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid rgb(97, 96, 96);
+    width: 20rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem)
+}
+.top-items{
+    width: 80%;
+    height: 100%; 
+    margin: 0px 10px
+
+}
+.top-items:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+  .top-items p{
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin: 5px;
+  }
+  .top-items .imgs {
+      height: 78%;
+       
+  }
+  .top-items .imgs img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  display: block;
+   
+  }
+  .top-items .for-price{
+      margin-top: 12px;
+  }
+/* =================================Utility classes===================================================== */
+
+.h-primary{
+    text-align: center;
+}
+.for-price{
+    margin-top: 8px;
+}
+p{
+    font-weight: bold;
+    font-size: 1.1rem;    
+}
+ 
+
+
